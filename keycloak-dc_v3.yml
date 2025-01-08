@@ -27,6 +27,8 @@ services:
       - db
     networks:
       - keycloak
+    volumes:
+      - './mynewtheme:/opt/bitnami/keycloak/themes/mynewtheme'
 
   db:
     image: postgres:14
